@@ -1,0 +1,102 @@
+html,
+body,
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.container {
+  background-image: url("../cove2.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-position: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.logo {
+  min-height: 350px;
+  height: auto;
+  width: 350px;
+  background-image: url("../logo.png");
+  -webkit-background-size: 350px 350px;
+  -moz-background-size: 350px 350px;
+  background-size: 350px 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -o-box-flex: 2;
+  -ms-box-flex: 2;
+  box-flex: 2;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
+}
+.social {
+  width: 350px;
+  height: auto;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.social .icon {
+  height: 75px;
+  width: 75px;
+  -webkit-background-size: 200% 200%;
+  -moz-background-size: 200% 200%;
+  background-size: 200% 200%;
+  background-position: center center;
+}
+.social .icon.scloud {
+  background-image: url("../s-icon.png");
+}
+.social .icon.fbook {
+  background-image: url("../f-icon.png");
+}
+.social .icon.tweet {
+  background-image: url("../t-icon.png");
+}
+* {
+  margin: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
