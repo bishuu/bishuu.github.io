@@ -9,4 +9,8 @@ exports.config = {
     "bower",
     "stylus"
   ],
+  watch: {
+    compiledDir: ".",
+    javascriptDir: "."
+  }
 }
