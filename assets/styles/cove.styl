@@ -1,0 +1,53 @@
+html, body, .container
+    height 100%
+    width 100%
+    overflow hidden
+
+.container
+    background-image url("../cove2.jpg")
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    align-items center
+    background-position center
+    flex-direction column
+
+size = 350px
+
+.logo
+    min-height size
+    height auto
+    width size
+    background-image url("../logo.png")
+    background-size size size
+    background-position center
+    background-repeat no-repeat
+    flex-grow 2
+
+.social
+    width size
+    height auto
+    flex-grow 1
+    display flex
+    align-items center
+    justify-content space-between
+
+    .icon
+        icon-size = 75px
+
+        height icon-size
+        width icon-size
+        background-size 200% 200%
+        background-position center center
+
+        &.scloud
+            background-image url("../s-icon.png")
+
+        &.fbook
+            background-image url("../f-icon.png")
+
+        &.tweet
+            background-image url("../t-icon.png")
+*
+    margin 0
+    flex-shrink 0
