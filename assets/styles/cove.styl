@@ -1,13 +1,22 @@
+*
+    margin 0
+    flex-shrink 0
+
+html
+    background black
+
 html, body, .container
     height 100%
     width 100%
-    overflow auto
+    overflow hidden
 
 body
     background-image url("../cove2.jpg")
     background-repeat no-repeat
     background-size cover
     background-position center
+
+    animation background 1s
 
 // Main panel width
 size = 500px
@@ -34,6 +43,8 @@ size = 500px
         background-position center
         background-repeat no-repeat
 
+        animation logo ease-in-out 1s
+
     .social
         width 85%
         height auto
@@ -53,15 +64,45 @@ size = 500px
             background-size (icon-size * 2) (icon-size * 2) // Remove the extra padding
             background-position center center
 
+            opacity 0
+            animation icon ease-in-out 1s
+            animation-fill-mode forwards
+
             &.scloud
                 background-image url("../s-icon.png")
 
             &.fbook
                 background-image url("../f-icon.png")
+                animation-delay 0.25s
 
             &.tweet
                 background-image url("../t-icon.png")
+                animation-delay 0.5s
 
-*
-    margin 0
-    flex-shrink 0
+@keyframes logo
+    from
+        n = 0.8
+        transform scale3d(n, n, n)
+        opacity 0
+    to
+        transform scale3d(1, 1, 1)
+        opacity 1
+
+@keyframes icon
+    from
+        transform translate3d(0, 100px, 0)
+        opacity 0
+    to
+        transform translate3d(0, 0, 0)
+        opacity 1
+
+@keyframes background
+    n = 1.2
+    from
+        transform translate3d(0, -50px, 0)
+        transform scale3d(n, n, n)
+        opacity 0
+    to
+        transform translate3d(0, 0, 0)
+        transform scale3d(1, 1, 1)
+        opacity 1
